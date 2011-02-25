@@ -1,0 +1,32 @@
+!!! XML
+!!!
+%html
+  %head
+    %meta{:name => "description", :content => "Sir Alfred IV"}
+    %meta{:name => "keywords", :content => "music,psychadelic,experimental,alfred"}
+
+    %title
+      Sir Alfred IV
+
+    %link{:rel => "stylesheet", :href => "/blueprint/screen.css", :type => "text/css", :media => "screen, projection"}
+    /[if IE]
+      %link{:rel => "stylesheet", :href => "/blueprint/ie.css", :type => "text/css", :media => "screen, projection"}
+    %link{:rel => "stylesheet", :href => "/alfred.css", :type => "text/css", :media => "screen, projection"}
+    %script{:type => "text/javascript", :src => "/javascript/jquery.js"}
+    %script{:type => "text/javascript", :src => "/javascript/alfred.js"}
+
+  %body
+    .container
+      #menu.span-24.last
+
+      %br.clear
+
+      #header.span-24
+        = haml_partial 'headers/_doma'
+      %br.clear
+
+      #content.span-24.top.last
+        = yield
+      %br.clear
+
+      #footer.span-24.last

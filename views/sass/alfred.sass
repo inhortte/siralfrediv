@@ -1,0 +1,129 @@
+$fontFamily: Cambria
+$fontSize: 16px
+$textLineHeight: 20px
+$bodyBackgroundColor: #000
+$mainBackgroundColor: #798436
+$inbetweenBackgroundColor: #8d9654
+$lightBackgroundColor: #a1a972
+$menuBorderColor: #ccc
+$textColor: #888
+$menuTextColor: #000
+$footerFontColor: #444
+$footerFontSize: 90%
+$buttonBackgroundColor: #798a69
+$greyboxBackgroundColor: #ccc
+$menuHoverColor: #a1a972
+
+body
+  :background
+    :color $bodyBackgroundColor
+  :font
+    :family $fontFamily
+    :size $fontSize
+  :color $textColor
+  :line-height $textLineHeight
+
+#menu
+  :width 100%
+  :background
+    :color $mainBackgroundColor
+
+#header
+  :margin 0
+  :padding 0
+  :width 100%
+  :margin
+    :right auto
+    :left auto
+
+  h2
+    :font
+      :size 32px
+      :weight bold
+      :style italic
+    :color #888
+    :text-align center
+
+#content
+  :margin 0
+  :padding 0
+  :width 100%
+  :margin
+    :right auto
+    :left auto
+
+  #home_img
+    :text-align center
+    :margin
+      :right auto
+      :left auto
+    
+    img
+      :border solid #666 1px
+      :width 540
+
+#footer
+  :background
+    :color $mainBackgroundColor
+  :font
+    :color $footerFontColor
+    :size $footerFontSize
+
+.align_right
+  :text-align right
+
+.clear
+  :clear both
+
+.greybox
+  :background
+    :color $greyboxBackgroundColor
+  :border 1px solid #000
+  :margin
+    :left 20%
+    :right 20%
+
+.center
+  :text-align center
+
+.container
+  :border 1px solid #000
+
+.round
+  -moz-border-radius: 10px
+  -webkit-border-radius: 10px
+  :border-radius 10px
+
+.main_bg_color
+  :background
+    :color $mainBackgroundColor
+
+.light_bg_color
+  :background
+    :color $lightBackgroundColor
+
+.float_right
+  :float right
+  
+.float_left
+  :float left
+
+.small
+  :line-height 110%
+
+br.wide
+  :padding
+    :bottom 20px
+
+br.homeleft
+  :height 100px
+  :margin
+    :top 100px
+    :bottom 100px
+
+hr
+  :width 80%
+  :margin
+    :right 10%
+    :left 10%
+  
